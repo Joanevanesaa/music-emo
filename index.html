@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/style.css" />
+    
+  </head>
+  <body>
+    <!-- Judul start -->
+    <div class="container">
+      <h1 class="judul">
+        Music Perception and Color Spectrum based on Emotional in Animation
+      </h1>
+      <h2 class="sub-judul">Joane Vanesa Hadi</h2>
+    </div>
+    <!-- Judul end -->
+
+    <!-- Video start -->
+    <div class="container-vid">
+      <video
+        onclick="play(event)"
+        src="vid/vid-1.mp4"
+        controls
+        id="video"
+      ></video>
+    </div>
+    <!-- Video end -->
+
+    <!-- BGM start -->
+    <div class="container-BGM">
+      <h1 class="BGM">Background Music</h1>
+      <button class="medley">Medley 1</button>
+      <!-- <div class="space"></div> -->
+      <button class="medley">Medley 2</button>
+      <!-- <div class="space"></div> -->
+      <button class="medley">Medley 3</button>
+      <p class="desc">
+        Beberapa lagu daerah yang sudah ada dimainkan secara bersambungan satu
+        lagu dengan lagu lainnya dengan diiringi musik yang selaras menciptakan
+        suatu komposisi lagu yang baru
+      </p>
+    </div>
+    <!-- BGM end -->
+
+    <!-- ColorEmotion start -->
+    <div class="container-emo">
+      <h1 class="emotitle">Audience Emotion-color Preferences</h1>
+    </div>
+
+    <div class="emo">
+      <h2 class="emo-name">Sad</h2>
+      <h2 class="choose">Choose Your Color</h2>
+    </div>
+
+    <div class="color-emo">
+      <div class="left">
+        <img src="img/Sad-0.png" class="image0 single"></img>
+        <img src="img/Sad-1.png" class="image1 single" hidden></img>
+        <img src="img/Sad-2.png" class="image2 single" hidden></img>
+        <img src="img/Sad-3.png" class="image3 single" hidden></img>
+      </div>
+      <div class="right">
+        <div>
+          <button class="sad one" target="1"></button>
+        <div class="space2"></div>
+        <button id="sad two" target="2"></button>
+        </div>
+        <button id="sad three" target="3"></button>
+      </div>
+    </div>
+
+    <div align="center">
+      <hr class="hr" />
+    </div>
+
+    <div class="emo">
+      <h2 class="emo-name">Anger</h2>
+      <h2 class="choose">Choose Your Color</h2>
+    </div>
+
+    <div class="color-emo">
+      <div class="left">
+        <img src="img/Angry-0.png" id="image"></img>
+      </div>
+      <div class="right">
+        <div>
+          <button id="anger1"></button>
+          <div class="space2"></div>
+          <button id="anger2"></button>
+          </div>
+          <button id="anger3"></button>
+        </div>
+      </div>
+
+      <div align="center">
+        <hr class="hr"/>
+      </div>
+
+      <div class="emo">
+        <h2 class="emo-name">Tense</h2>
+        <h2 class="choose">Choose Your Color</h2>
+      </div>
+  
+      <div class="color-emo">
+        <div class="left">
+          <img src="img/Tense-0.png" id="image"></img>
+        </div>
+        <div class="right">
+          <div>
+            <button id="tense1"></button>
+          <div class="space2"></div>
+          <button id="tense2"></button>
+          </div>
+          <button id="tense3"></button>
+        </div>
+      </div>
+  
+      <div align="center">
+        <hr class="hr" />
+      </div>
+
+      <div class="emo">
+        <h2 class="emo-name">Relax</h2>
+        <h2 class="choose">Choose Your Color</h2>
+      </div>
+  
+      <div class="color-emo">
+        <div class="left">
+          <img src="img/Relax-0.png" id="image"></img>
+        </div>
+        <div class="right">
+          <div>
+            <button id="relax1"></button>
+          <div class="space2"></div>
+          <button id="relax2"></button>
+          </div>
+          <button id="relax3"></button>
+        </div>
+      </div>
+  
+      <div align="center">
+        <hr class="hr" />
+      </div>
+
+      <div class="emo">
+        <h2 class="emo-name">Happy</h2>
+        <h2 class="choose">Choose Your Color</h2>
+      </div>
+  
+      <div class="color-emo">
+        <div class="left">
+          <img src="img/Happy-0.png" id="image"></img>
+        </div>
+        <div class="right">
+          <div>
+            <button id="happy1"></button>
+          <div class="space2"></div>
+          <button id="happy2"></button>
+          </div>
+          <button id="happy3"></button>
+        </div>
+      </div>
+  
+      <div align="center">
+        <hr class="hr" />
+      </div>
+    <!-- ColorEmotion end -->
+    <!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script> -->
+    <!-- <script src="js/myScript.js"></script> -->
+  </body>
+</html>
