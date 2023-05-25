@@ -1,5 +1,5 @@
 :root {
-  --primary: #FFFEDD;
+  --primary: #fffedd;
   --bg: #fff;
 }
 
@@ -15,89 +15,121 @@
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--bg);
-  color: #fff;
 }
 
 .container {
   width: 100%;
-  height: 100px;
   background-position: center !important;
-  background-color: var(--primary);
+  /* background-color: var(--primary); */
+  background-image: linear-gradient(45deg, #292e91, #4ca9df);
   text-align: center;
-  padding: 35px;
+  padding: 5%;
   font-weight: 500;
-  font-size: 2rem;
+  box-shadow: -1px 1px 5px #888;
 }
-
+/* heading */
 .container .judul {
   text-align: center;
-  font-size: 1.75rem;
+  font-size: 3.25rem;
   font-weight: 700;
-  color: #000000;
+  margin-right: 2%;
+  color: #fff;
 }
-
 .container .sub-judul {
   text-align: center;
-  font-size: 1rem;
-  font-weight: 300;
+  font-size: 1.5rem;
+  font-weight: 500;
   line-height: 120%;
-  color: #000000;
+  color: #fff;
 }
 
+/* video */
 .container-vid {
   position: relative;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
-  padding-top: 75px;
+  padding: 5%;
 }
-
-.container-vid #video {
+.container-vid .video {
   margin: 0 auto;
-  width: 750px;
+  width: 60%;
   display: block;
   border-radius: 20px;
   box-shadow: -1px 1px 5px #888;
 }
 
+#hidden {
+  display: none;
+}
+/* BGM */
 .container-BGM {
   width: 100%;
-  height: 300px;
-  margin-top: 35px;
-  background-position: center !important;
-  background-color: var(--primary);
-  text-align: center;
-  padding: 35px;
-  font-weight: 500;
-  font-size: 2rem;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background-color: #a5d1e1;
+  box-shadow: -1px 1px 5px #888;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  position: relative;
+  align-items: center;
+  width: 350px;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: -1px 1px 5px #888;
+  border-radius: 30px;
+  margin: 20px;
+  /* overflow: hidden; */
+}
+
+.card .music-icon {
+  position: relative;
+  width: 100px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.card .button-med {
+  font-size: 15px;
+  background: #f0973d;
+  color: white;
+  position: relative;
+  width: 100px;
+  height: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 15px;
+  cursor: pointer;
 }
 
 .container-BGM .BGM {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 700;
+  padding: 3%;
   color: #000000;
 }
 
-.container-BGM .medley {
-  font-size: 15px;
-  background: #f0973d;
-  color: white;
-  border-radius: 5px;
-  margin-top: 50px;
-  padding: 12px; 
-}
-
-.space {
-  width: 75px;
-  height: 100px;
-  display: inline-block;
-}
-
 .container-BGM .desc {
-  margin-top: 25x;
-  margin-right: 100px;
-  margin-left: 100px;
+  margin-top: 25px;
+  margin-right: 150px;
+  margin-left: 150px;
   line-height: 2.5;
   text-align: center;
   font-size: 1.75rem;
@@ -105,9 +137,9 @@ body {
   color: #000000;
 }
 
+/* Color-Emo */
 .container-emo {
   width: 100%;
-  height: 100px;
   margin-top: 50px;
   background-position: center !important;
   /*background-color: #7dcad8;*/
@@ -126,7 +158,7 @@ body {
   background-position: center !important;
   background-color: #ffffff;
   text-align: center;
-  display:flex;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -136,7 +168,7 @@ body {
   padding-top: 25px;
   color: #000;
   text-align: left;
-  margin-left: 245px;
+  margin-left: 350px;
 }
 
 .emo .choose {
@@ -144,21 +176,13 @@ body {
   font-size: 2rem;
   color: #000;
   text-align: right;
-  margin-right: 290px;
+  margin-right: 450px;
   padding-top: 25px;
-
-}
-
-#image {
-  width: 385px;
-  border-radius: 20px;
-  margin-top: 25px;
-  box-shadow: 1px 1px 5px #888;
 }
 
 .hr {
   width: 25%;
-  height:3px;
+  height: 3px;
   margin-top: 25px;
   text-align: center;
   align-items: center;
@@ -168,30 +192,33 @@ body {
 
 .color-emo {
   width: 100%;
-  height:300px;
   background-color: rgb(255, 255, 255);
   display: flex;
 }
 
-.left {
+.color-emo .left {
   width: 50%;
   align-items: left;
-  margin-left: 230px;
+  margin-left: 350px;
   padding: 1em;
   float: left;
 }
 
-.right {
+.color-emo .right {
   text-align: left;
   align-items: left;
   width: 50%;
   margin-top: 45px;
   margin-right: 135px;
   padding: 1em;
-  float:right
+  float: right;
 }
 
-.sad {
+.color-emo .right .sad,
+.color-emo .right .anger,
+.color-emo .right .tense,
+.color-emo .right .relax,
+.color-emo .right .happy {
   cursor: pointer;
   height: 64px;
   width: 203px;
@@ -199,50 +226,87 @@ body {
   box-shadow: -1px 1px 5px #888;
 }
 
-.one {
-  background-color: #0073A4;
+/* sad */
+.one-s {
+  background-color: #0073a4;
 }
-.two {
-  background-color: #282F89;
+.two-s {
+  background-color: #282f89;
 }
-.three {
+.three-s {
   background-color: #757575;
   margin-top: 20px;
 }
+/* anger */
+.one-a {
+  background-color: #f51300;
+}
+.two-a {
+  background-color: #862222;
+}
+.three-a {
+  background-color: #50130b;
+  margin-top: 20px;
+}
+/* tense */
+.one-t {
+  background-color: #a43664;
+}
+.two-t {
+  background-color: #a04297;
+}
+.three-t {
+  background-color: #562780;
+  margin-top: 20px;
+}
+/* Relax */
+.one-r {
+  background-color: #fffda4;
+}
+.two-r {
+  background-color: #96daeb;
+}
+.three-r {
+  background-color: #9ddc9e;
+  margin-top: 20px;
+}
+/* happy */
+.one-h {
+  background-color: #fff900;
+}
+.two-h {
+  background-color: #85c751;
+}
+.three-h {
+  background-color: #009702;
+  margin-top: 20px;
+}
 
-.image0, .image1, .image2, .image3 {
-  width: 385px;
+.image-s0,
+.image-s1,
+.image-s2,
+.image-s3,
+.image-a0,
+.image-a1,
+.image-a2,
+.image-a3,
+.image-t0,
+.image-t1,
+.image-t2,
+.image-t3,
+.image-r0,
+.image-r1,
+.image-r2,
+.image-r3,
+.image-h0,
+.image-h1,
+.image-h2,
+.image-h3 {
+  width: 500px;
   border-radius: 20px;
   margin-top: 25px;
   box-shadow: 1px 1px 5px #888;
 }
-
-#anger1, #anger2, #anger3,
-#tense1, #tense2, #tense3,
-#relax1, #relax2, #relax3,
-#happy1, #happy2, #happy3 {
-  cursor: pointer;
-  height: 64px;
-  width: 203px;
-  border-radius: 30px;
-  box-shadow: -1px 1px 5px #888;
-}
-
-/*.sad1 {background-color: #0073A4;}
-#sad2 {background-color: #282F89;}
-#sad3 {background-color: #757575; margin-top: 20px;}*/
-#anger1 {background-color: #f51300;}
-#anger2 {background-color: #862222;}
-#anger3 {background-color: #50130B; margin-top: 20px;}
-#tense1 {background-color: #a43664;}
-#tense2 {background-color: #A04297;}
-#tense3 {background-color: #562780; margin-top: 20px;}
-#relax1 {background-color: #fFFDA4;}
-#relax2 {background-color: #96DAEB;}
-#relax3 {background-color: #9DDC9E; margin-top: 20px;}
-#happy1 {background-color: #fFF900;}
-#happy2 {background-color: #85C751;}
-#happy3 {background-color: #009702; margin-top: 20px}
 
 .space2 {
   width: 30px;
@@ -250,23 +314,214 @@ body {
   display: inline-block;
 }
 
+.container-blank {
+  height: 100px;
+}
 /* Media Queries */
 
-/* Laptop */
-@media only screen and (max-width: 1366px) {
-  html {
-    font-size: 75%;
-  }
-}
 /* Tablet */
 @media only screen and (max-width: 768px) {
-  html {
-    font-size: 62.5%;
+  .container .judul {
+    font-size: 85%;
+  }
+  .container .sub-judul {
+    font-size: 85%;
+  }
+  .container-vid .video {
+    width: 80%;
+  }
+  .container-BGM .BGM {
+    font-size: 100%;
+    padding: 2%;
+  }
+  .container-BGM .card-container .card {
+    width: 20%;
+    padding: 20px;
+    margin: 15px;
+  }
+  .container-BGM .card-container .card img {
+    width: 55%;
+    border-radius: 10px;
+  }
+  .container-BGM .card-container .card .button-med {
+    font-size: 12px;
+    width: 75px;
+    height: 35px;
+  }
+  .container-BGM .desc {
+    font-size: 85%;
+    margin-top: 10px;
+    margin-right: 70px;
+    margin-left: 70px;
+    line-height: 2.25;
+  }
+  .container-emo .emotitle {
+    font-size: 100%;
+  }
+  .emo .emo-name {
+    font-size: 100%;
+    margin-left: 100px;
+  }
+  .emo .choose {
+    font-size: 100%;
+    margin-right: 150px;
+    padding-top: 15px;
+  }
+  .color-emo .left {
+    margin-left: 85px;
+  }
+  .color-emo .right {
+    margin-right: 85px;
+    margin-top: 35px;
+  }
+  .color-emo .left .image-s0,
+  .color-emo .left .image-s1,
+  .color-emo .left .image-s2,
+  .color-emo .left .image-s3,
+  .color-emo .left .image-a0,
+  .color-emo .left .image-a1,
+  .color-emo .left .image-a2,
+  .color-emo .left .image-a3,
+  .color-emo .left .image-t0,
+  .color-emo .left .image-t1,
+  .color-emo .left .image-t2,
+  .color-emo .left .image-t3,
+  .color-emo .left .image-r0,
+  .color-emo .left .image-r1,
+  .color-emo .left .image-r2,
+  .color-emo .left .image-r3,
+  .color-emo .left .image-h0,
+  .color-emo .left .image-h1,
+  .color-emo .left .image-h2,
+  .color-emo .left .image-h3 {
+    width: 250px;
+  }
+  .color-emo .right .sad,
+  .color-emo .right .anger,
+  .color-emo .right .tense,
+  .color-emo .right .relax,
+  .color-emo .right .happy {
+    height: 45px;
+    width: 45%;
+  }
+  .three-s,
+  .three-a,
+  .three-h,
+  .three-t,
+  .three-r {
+    margin-top: 10px;
+  }
+  .space2 {
+    width: 10px;
+  }
+  .hr {
+    width: 45%;
   }
 }
 /* Mobile */
 @media only screen and (max-width: 450px) {
-  html {
-    font-size: 55%;
+  .container .judul {
+    font-size: 65%;
+  }
+  .container .sub-judul {
+    font-size: 60%;
+  }
+  .container-vid .video {
+    width: 85%;
+  }
+  .container-BGM .BGM {
+    font-size: 90%;
+    padding: 2%;
+  }
+  .container-BGM .card-container .card {
+    width: 27%;
+    padding: 15px;
+    margin: 10px;
+  }
+  .container-BGM .card-container .music-icon {
+    width: 100%;
+  }
+  .container-BGM .card-container .card img {
+    width: 25%;
+    border-radius: 10px;
+  }
+  .container-BGM .card-container .card .button-med {
+    font-size: 10px;
+    width: 60px;
+    height: 30px;
+  }
+  .container-BGM .desc {
+    font-size: 60%;
+    margin-top: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
+    line-height: 2;
+  }
+
+  .container-emo .emotitle {
+    font-size: 75%;
+  }
+  .emo .emo-name {
+    font-size: 60%;
+    margin-left: 35px;
+    padding-top: 25px;
+  }
+  .emo .choose {
+    font-size: 75%;
+    margin-right: 35px;
+    padding-top: 25px;
+  }
+  .color-emo .left {
+    margin-left: 15px;
+  }
+  .color-emo .right {
+    margin-right: 10px;
+    margin-top: 35px;
+    align-items: right;
+    text-align: right;
+  }
+  .color-emo .left .image-s0,
+  .color-emo .left .image-s1,
+  .color-emo .left .image-s2,
+  .color-emo .left .image-s3,
+  .color-emo .left .image-a0,
+  .color-emo .left .image-a1,
+  .color-emo .left .image-a2,
+  .color-emo .left .image-a3,
+  .color-emo .left .image-t0,
+  .color-emo .left .image-t1,
+  .color-emo .left .image-t2,
+  .color-emo .left .image-t3,
+  .color-emo .left .image-r0,
+  .color-emo .left .image-r1,
+  .color-emo .left .image-r2,
+  .color-emo .left .image-r3,
+  .color-emo .left .image-h0,
+  .color-emo .left .image-h1,
+  .color-emo .left .image-h2,
+  .color-emo .left .image-h3 {
+    width: 265px;
+  }
+  .color-emo .right .sad,
+  .color-emo .right .anger,
+  .color-emo .right .tense,
+  .color-emo .right .relax,
+  .color-emo .right .happyd {
+    height: 35px;
+    width: 35%;
+  }
+  .three-s,
+  .three-a,
+  .three-h,
+  .three-t,
+  .three-r {
+    margin-top: 1px;
+  }
+  .space2 {
+    width: 0px;
+    display: flex;
+  }
+  .hr {
+    width: 45%;
   }
 }

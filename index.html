@@ -16,7 +16,6 @@
 
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css" />
-    
   </head>
   <body>
     <!-- Judul start -->
@@ -32,21 +31,69 @@
     <div class="container-vid">
       <video
         onclick="play(event)"
+        src="vid/vid-0.mp4"
+        controls
+        class="video single"
+      ></video>
+      <video
+        onclick="play(event)"
         src="vid/vid-1.mp4"
         controls
-        id="video"
+        class="video single"
+        display="none"
+        id="hidden"
+      ></video>
+      <video
+        onclick="play(event)"
+        src="vid/vid-2.mp4"
+        controls
+        class="video single"
+        display="none"
+        id="hidden"
+      ></video>
+      <video
+        onclick="play(event)"
+        src="vid/vid-3.mp4"
+        controls
+        class="video single"
+        id="hidden"
       ></video>
     </div>
     <!-- Video end -->
 
     <!-- BGM start -->
+
     <div class="container-BGM">
       <h1 class="BGM">Background Music</h1>
-      <button class="medley">Medley 1</button>
-      <!-- <div class="space"></div> -->
-      <button class="medley">Medley 2</button>
-      <!-- <div class="space"></div> -->
-      <button class="medley">Medley 3</button>
+      <div class="card-container">
+        <div class="card">
+          <div class="music-icon">
+            <img src="img/Icon-1.png" />
+          </div>
+          <div class="med-button">
+            <button class="button-med one" target="1">Medley 1</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="music-icon">
+            <img src="img/Icon-1.png" />
+          </div>
+          <div class="med-button">
+            <button class="button-med two" target="2">Medley 2</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="music-icon">
+            <img src="img/Icon-1.png" />
+          </div>
+          <div class="med-button">
+            <button class="button-med three" target="3">Medley 3</button>
+          </div>
+        </div>
+      </div>
+
       <p class="desc">
         Beberapa lagu daerah yang sudah ada dimainkan secara bersambungan satu
         lagu dengan lagu lainnya dengan diiringi musik yang selaras menciptakan
@@ -55,130 +102,143 @@
     </div>
     <!-- BGM end -->
 
-    <!-- ColorEmotion start -->
-    <div class="container-emo">
-      <h1 class="emotitle">Audience Emotion-color Preferences</h1>
-    </div>
-
-    <div class="emo">
-      <h2 class="emo-name">Sad</h2>
-      <h2 class="choose">Choose Your Color</h2>
-    </div>
-
-    <div class="color-emo">
-      <div class="left">
-        <img src="img/Sad-0.png" class="image0 single"></img>
-        <img src="img/Sad-1.png" class="image1 single" hidden></img>
-        <img src="img/Sad-2.png" class="image2 single" hidden></img>
-        <img src="img/Sad-3.png" class="image3 single" hidden></img>
-      </div>
-      <div class="right">
-        <div>
-          <button class="sad one" target="1"></button>
-        <div class="space2"></div>
-        <button id="sad two" target="2"></button>
+        <!-- ColorEmotion start -->
+        <div class="container-emo">
+          <h1 class="emotitle">Audience Emotion-color Preferences</h1>
         </div>
-        <button id="sad three" target="3"></button>
-      </div>
-    </div>
-
-    <div align="center">
-      <hr class="hr" />
-    </div>
-
-    <div class="emo">
-      <h2 class="emo-name">Anger</h2>
-      <h2 class="choose">Choose Your Color</h2>
-    </div>
-
-    <div class="color-emo">
-      <div class="left">
-        <img src="img/Angry-0.png" id="image"></img>
-      </div>
-      <div class="right">
-        <div>
-          <button id="anger1"></button>
-          <div class="space2"></div>
-          <button id="anger2"></button>
+    
+        <div class="emo">
+          <h2 class="emo-name">Sad</h2>
+          <h2 class="choose">Choose Your Color</h2>
+        </div>
+    
+        <div class="color-emo">
+          <div class="left">
+            <img src="img/Sad-0.png" class="image-s0 single-s"></img>
+            <img src="img/Sad-1.png" class="image-s1 single-s" hidden></img>
+            <img src="img/Sad-2.png" class="image-s2 single-s" hidden></img>
+            <img src="img/Sad-3.png" class="image-s3 single-s" hidden></img>
           </div>
-          <button id="anger3"></button>
-        </div>
-      </div>
-
-      <div align="center">
-        <hr class="hr"/>
-      </div>
-
-      <div class="emo">
-        <h2 class="emo-name">Tense</h2>
-        <h2 class="choose">Choose Your Color</h2>
-      </div>
-  
-      <div class="color-emo">
-        <div class="left">
-          <img src="img/Tense-0.png" id="image"></img>
-        </div>
-        <div class="right">
-          <div>
-            <button id="tense1"></button>
-          <div class="space2"></div>
-          <button id="tense2"></button>
+          <div class="right">
+            <div>
+              <button class="sad one-s" target="1"></button>
+            <div class="space2"></div>
+            <button class="sad two-s" target="2"></button>
+            </div>
+            <button class="sad three-s" target="3"></button>
           </div>
-          <button id="tense3"></button>
         </div>
-      </div>
-  
-      <div align="center">
-        <hr class="hr" />
-      </div>
+    
+        <div align="center">
+          <hr class="hr" />
+        </div>
 
-      <div class="emo">
-        <h2 class="emo-name">Relax</h2>
-        <h2 class="choose">Choose Your Color</h2>
-      </div>
-  
-      <div class="color-emo">
-        <div class="left">
-          <img src="img/Relax-0.png" id="image"></img>
+        <div class="emo">
+          <h2 class="emo-name">Anger</h2>
+          <h2 class="choose">Choose Your Color</h2>
         </div>
-        <div class="right">
-          <div>
-            <button id="relax1"></button>
-          <div class="space2"></div>
-          <button id="relax2"></button>
+    
+        <div class="color-emo">
+          <div class="left">
+            <img src="img/Angry-0.png" class="image-a0 single-a"></img>
+            <img src="img/Angry-1.png" class="image-a1 single-a" hidden></img>
+            <img src="img/Angry-2.png" class="image-a2 single-a" hidden></img>
+            <img src="img/Angry-3.png" class="image-a3 single-a" hidden></img>
           </div>
-          <button id="relax3"></button>
-        </div>
-      </div>
-  
-      <div align="center">
-        <hr class="hr" />
-      </div>
+          <div class="right">
+            <div>
+              <button class="anger one-a" target="1"></button>
+              <div class="space2"></div>
+              <button class="anger two-a" target="2"></button>
+              </div>
+              <button class="anger three-a" target="3"></button>
+            </div>
+          </div>
+    
+          <div align="center">
+            <hr class="hr"/>
+          </div>
+    
+          <div class="emo">
+            <h2 class="emo-name">Tense</h2>
+            <h2 class="choose">Choose Your Color</h2>
+          </div>
+      
+          <div class="color-emo">
+            <div class="left">
+              <img src="img/Tense-0.png" class="image-t0 single-t"></img>
+              <img src="img/Tense-1.png" class="image-t1 single-t" hidden></img>
+              <img src="img/Tense-2.png" class="image-t2 single-t" hidden></img>
+              <img src="img/Tense-3.png" class="image-t3 single-t" hidden></img>
+            </div>
+            <div class="right">
+              <div>
+                <button class="tense one-t" target="1"></button>
+              <div class="space2"></div>
+              <button class="tense two-t" target="2"></button>
+              </div>
+              <button class="tense three-t" target="3"></button>
+            </div>
+          </div>
+      
+          <div align="center">
+            <hr class="hr" />
+          </div>
+    
+          <div class="emo">
+            <h2 class="emo-name">Relax</h2>
+            <h2 class="choose">Choose Your Color</h2>
+          </div>
+      
+          <div class="color-emo">
+            <div class="left">
+              <img src="img/Relax-0.png" class="image-r0 single-r"></img>
+              <img src="img/Relax-1.png" class="image-r1 single-r" hidden></img>
+              <img src="img/Relax-2.png" class="image-r2 single-r" hidden></img>
+              <img src="img/Relax-3.png" class="image-r3 single-r" hidden></img>
+            </div>
+            <div class="right">
+              <div>
+                <button class="relax one-r" target="1"></button>
+              <div class="space2"></div>
+              <button class="relax two-r" target="2"></button>
+              </div>
+              <button class="relax three-r" target="3"></button>
+            </div>
+          </div>
+      
+          <div align="center">
+            <hr class="hr" />
+          </div>
+    
+          <div class="emo">
+            <h2 class="emo-name">Happy</h2>
+            <h2 class="choose">Choose Your Color</h2>
+          </div>
+      
+          <div class="color-emo">
+            <div class="left">
+              <img src="img/Happy-0.png" class="image-h0 single-h"></img>
+              <img src="img/Happy-1.png" class="image-h1 single-h" hidden></img>
+              <img src="img/Happy-2.png" class="image-h2 single-h" hidden></img>
+              <img src="img/Happy-3.png" class="image-h3 single-h" hidden></img>
+            </div>
+            <div class="right">
+              <div>
+                <button class="happy one-h" target="1"></button>
+              <div class="space2"></div>
+              <button class="happy two-h" target="2"></button>
+              </div>
+              <button class="happy three-h" target="3"></button>
+            </div>
+          </div>
+      
+          <div class="container-blank">
+    
+          </div>
+        <!-- ColorEmotion end -->
 
-      <div class="emo">
-        <h2 class="emo-name">Happy</h2>
-        <h2 class="choose">Choose Your Color</h2>
-      </div>
-  
-      <div class="color-emo">
-        <div class="left">
-          <img src="img/Happy-0.png" id="image"></img>
-        </div>
-        <div class="right">
-          <div>
-            <button id="happy1"></button>
-          <div class="space2"></div>
-          <button id="happy2"></button>
-          </div>
-          <button id="happy3"></button>
-        </div>
-      </div>
-  
-      <div align="center">
-        <hr class="hr" />
-      </div>
-    <!-- ColorEmotion end -->
-    <!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script> -->
-    <!-- <script src="js/myScript.js"></script> -->
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+        <script src="js/myScript.js"></script>
   </body>
 </html>
