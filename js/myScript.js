@@ -1,9 +1,11 @@
 jQuery(function () {
   jQuery(".button-med").click(function () {
     jQuery(".single").hide();
+    var video = document.getElementById("hidden");
+    video.style.display = "block";
     jQuery(".video" + $(this).attr("target")).show();
   });
-  
+
   jQuery(".sad").click(function () {
     jQuery(".single-s").hide();
     jQuery(".image-s" + $(this).attr("target")).show();
