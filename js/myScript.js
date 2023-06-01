@@ -1,9 +1,8 @@
 jQuery(function () {
   jQuery(".button-med").click(function () {
-    jQuery(".single").hide();
-    var video = document.getElementById("hidden");
-    video.style.display = "block";
-    jQuery(".video" + $(this).attr("target")).show();
+    var video = $('#video');
+    video.attr('src', $(this).attr("target"));
+    video[0].load();
   });
 
   jQuery(".sad").click(function () {

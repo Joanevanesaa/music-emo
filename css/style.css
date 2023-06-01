@@ -23,21 +23,21 @@ body {
   /* background-color: var(--primary); */
   background-image: linear-gradient(45deg, #292e91, #4ca9df);
   text-align: center;
-  padding: 5%;
+  padding: 4%;
   font-weight: 500;
   box-shadow: -1px 1px 5px #888;
 }
 /* heading */
 .container .judul {
   text-align: center;
-  font-size: 3.25rem;
+  font-size: 2rem;
   font-weight: 700;
   margin-right: 2%;
   color: #fff;
 }
 .container .sub-judul {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   font-weight: 500;
   line-height: 120%;
   color: #fff;
@@ -59,7 +59,7 @@ body {
   box-shadow: -1px 1px 5px #888;
 }
 
-#hidden {
+.hidden {
   display: none;
 }
 /* BGM */
@@ -82,7 +82,7 @@ body {
 .card {
   position: relative;
   align-items: center;
-  width: 350px;
+  width: 200px;
   padding: 40px;
   background-color: #fff;
   box-shadow: -1px 1px 5px #888;
@@ -127,14 +127,17 @@ body {
 }
 
 .container-BGM .desc {
-  margin-top: 25px;
-  margin-right: 150px;
-  margin-left: 150px;
-  line-height: 2.5;
-  text-align: center;
-  font-size: 1.75rem;
+  padding-left: 15%;
+  padding-right: 15%;
+  line-height: 2;
+  text-align: justify;
+  font-size: 1.5rem;
   font-weight: 500;
   color: #000000;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 /* Color-Emo */
@@ -149,7 +152,7 @@ body {
 
 .container-emo .emotitle {
   font-weight: 700;
-  font-size: 3rem;
+  font-size: 2.75rem;
   text-align: center;
   color: #000;
 }
@@ -168,7 +171,7 @@ body {
   padding-top: 25px;
   color: #000;
   text-align: left;
-  margin-left: 350px;
+  margin-left: 200px;
 }
 
 .emo .choose {
@@ -176,7 +179,7 @@ body {
   font-size: 2rem;
   color: #000;
   text-align: right;
-  margin-right: 450px;
+  margin-right: 200px;
   padding-top: 25px;
 }
 
@@ -199,7 +202,7 @@ body {
 .color-emo .left {
   width: 50%;
   align-items: left;
-  margin-left: 350px;
+  margin-left: 200px;
   padding: 1em;
   float: left;
 }
@@ -282,26 +285,11 @@ body {
   margin-top: 20px;
 }
 
-.image-s0,
-.image-s1,
-.image-s2,
-.image-s3,
-.image-a0,
-.image-a1,
-.image-a2,
-.image-a3,
-.image-t0,
-.image-t1,
-.image-t2,
-.image-t3,
-.image-r0,
-.image-r1,
-.image-r2,
-.image-r3,
-.image-h0,
-.image-h1,
-.image-h2,
-.image-h3 {
+.image-s0, .image-s1, .image-s2, .image-s3,
+.image-a0, .image-a1, .image-a2, .image-a3,
+.image-t0, .image-t1, .image-t2, .image-t3,
+.image-r0, .image-r1, .image-r2, .image-r3,
+.image-h0, .image-h1, .image-h2,.image-h3 {
   width: 500px;
   border-radius: 20px;
   margin-top: 25px;
@@ -506,7 +494,7 @@ body {
   .color-emo .right .anger,
   .color-emo .right .tense,
   .color-emo .right .relax,
-  .color-emo .right .happyd {
+  .color-emo .right .happy {
     height: 35px;
     width: 35%;
   }
