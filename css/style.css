@@ -83,10 +83,10 @@ body {
   position: relative;
   align-items: center;
   width: 200px;
-  padding: 40px;
+  padding: 35px;
   background-color: #fff;
   box-shadow: -1px 1px 5px #888;
-  border-radius: 30px;
+  border-radius: 25px;
   margin: 20px;
   /* overflow: hidden; */
 }
@@ -100,6 +100,10 @@ body {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+}
+
+.icon {
+  width: 55%;
 }
 
 .card .button-med {
@@ -126,9 +130,19 @@ body {
   color: #000000;
 }
 
+.container-BGM .sub-judul {
+  text-align: center;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 120%;
+  color: #000;
+}
+
 .container-BGM .desc {
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-top: 3%;
+  padding-left: 15.55%;
+  padding-right: 15.55%;
+  padding-bottom: 5%;
   line-height: 2;
   text-align: justify;
   font-size: 1.5rem;
@@ -313,10 +327,10 @@ body {
     font-size: 85%;
   }
   .container .sub-judul {
-    font-size: 85%;
+    font-size: 95%;
   }
   .container-vid .video {
-    width: 80%;
+    width: 100%;
   }
   .container-BGM .BGM {
     font-size: 100%;
@@ -338,9 +352,10 @@ body {
   }
   .container-BGM .desc {
     font-size: 85%;
-    margin-top: 10px;
-    margin-right: 70px;
-    margin-left: 70px;
+    padding-top: 3%;
+    padding-left: 15.55%;
+    padding-right: 15.55%;
+    padding-bottom: 5%;
     line-height: 2.25;
   }
   .container-emo .emotitle {
@@ -415,11 +430,15 @@ body {
     font-size: 60%;
   }
   .container-vid .video {
-    width: 85%;
+    width: 95%;
   }
   .container-BGM .BGM {
     font-size: 90%;
     padding: 2%;
+  }
+
+  .container-BGM .sub-judul {
+    font-size: 60%;
   }
   .container-BGM .card-container .card {
     width: 27%;
@@ -440,9 +459,10 @@ body {
   }
   .container-BGM .desc {
     font-size: 60%;
-    margin-top: 10px;
-    margin-right: 50px;
-    margin-left: 50px;
+    padding-top: 3%;
+    padding-left: 15.55%;
+    padding-right: 15.55%;
+    padding-bottom: 5%;
     line-height: 2;
   }
 
